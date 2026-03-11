@@ -1,6 +1,14 @@
-Write a Python function called normalizar_dataframe(df).
+Problema: Identificación de días con ventas anormalmente altas
 
-The function must normalize all numeric columns in the DataFrame
-between 0 and 1 using min-max normalization.
+Se tiene un DataFrame con columnas:
 
-Return the normalized DataFrame.
+fecha
+ventas
+
+Escribe una función llamada detectar_picos_ventas(df, umbral_std)
+
+La función debe:
+
+1. Calcular la media y desviación estándar de ventas.
+2. Identificar los días donde ventas > media + umbral_std * desviación.
+3. Devolver un DataFrame con solo esas filas.
