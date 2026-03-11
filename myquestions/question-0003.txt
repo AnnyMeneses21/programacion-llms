@@ -1,16 +1,18 @@
-Problema: Entrenamiento de modelo KNN
+Problema: Clasificación de popularidad de canciones de K-pop
 
-Escribe una función llamada entrenar_knn(X, y, k)
+Se tiene un DataFrame con características numéricas de canciones y una columna target llamada popularity_label.
+
+Escribe una función llamada entrenar_clasificador_popularidad(df, target_col)
 
 La función debe:
 
-1. Escalar X usando StandardScaler.
-2. Entrenar un modelo KNeighborsClassifier con n_neighbors=k.
-3. Predecir las etiquetas sobre los mismos datos.
-4. Calcular el accuracy usando accuracy_score.
+1. Separar X e y usando target_col.
+2. Escalar las características usando StandardScaler.
+3. Entrenar un modelo DecisionTreeClassifier.
+4. Predecir sobre los mismos datos.
+5. Calcular el accuracy del modelo.
 
 La función debe devolver:
 
-modelo_entrenado
 accuracy
-predicciones
+predictions
