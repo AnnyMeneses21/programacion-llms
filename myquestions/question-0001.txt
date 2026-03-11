@@ -1,19 +1,16 @@
-Problema: Detección de facturación inconsistente
+Problema: Cálculo de tasa de crecimiento por cliente
 
-Una empresa tiene registros de facturación mensual de sus clientes.
-Se dispone de un DataFrame con las siguientes columnas:
+Se tiene un DataFrame con las columnas:
 
 cliente_id
-mes
-facturacion
+fecha
+ventas
 
-Escribe una función llamada detectar_incrementos_anormales(df, umbral)
+Escribe una función llamada calcular_crecimiento_clientes(df)
 
 La función debe:
 
-1. Ordenar los registros por cliente_id y mes.
-2. Calcular el cambio porcentual de facturación entre meses consecutivos por cliente.
-3. Identificar los casos donde el incremento sea mayor que el valor de umbral.
-4. Devolver un DataFrame con las filas donde el incremento sea mayor al umbral.
-
-El DataFrame retornado debe incluir una columna adicional llamada incremento_pct.
+1. Ordenar los datos por cliente_id y fecha.
+2. Calcular el crecimiento porcentual de ventas entre registros consecutivos de cada cliente.
+3. Crear una nueva columna llamada crecimiento_pct.
+4. Devolver el DataFrame con la nueva columna.
