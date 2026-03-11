@@ -2,18 +2,18 @@ import pandas as pd
 import numpy as np
 import random
 
-def generar_caso_de_uso_detectar_canciones_virales():
+def generar_caso_de_uso_detectar_libros_populares():
 
     n = random.randint(10,20)
 
-    songs = [f"song_{i}" for i in range(n)]
-    artists = [f"artist_{random.randint(1,5)}" for _ in range(n)]
-    streams = np.random.randint(10000,1000000,size=n)
+    books = [f"book_{i}" for i in range(n)]
+    authors = [f"author_{random.randint(1,5)}" for _ in range(n)]
+    borrows = np.random.randint(100,5000,size=n)
 
     df = pd.DataFrame({
-        "song_name": songs,
-        "artist": artists,
-        "streams": streams
+        "book_title": books,
+        "author": authors,
+        "borrow_count": borrows
     })
 
     factor = random.uniform(1.2,2.0)
@@ -23,7 +23,8 @@ def generar_caso_de_uso_detectar_canciones_virales():
         "factor": factor
     }
 
-    mean_streams = df["streams"].mean()
-    output_data = df[df["streams"] > mean_streams * factor]
+    mean_borrow = df["borrow_count"].mean()
+
+    output_data = df[df["borrow_count"] > mean_borrow * factor]
 
     return input_data, output_data
