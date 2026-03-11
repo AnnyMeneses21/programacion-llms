@@ -1,16 +1,18 @@
-Problema: Cálculo de tasa de crecimiento por cliente
+Problema: Análisis de crecimiento de popularidad de grupos de K-pop
 
 Se tiene un DataFrame con las columnas:
 
-cliente_id
-fecha
-ventas
+group_name
+year
+album_sales
 
-Escribe una función llamada calcular_crecimiento_clientes(df)
+Cada fila representa las ventas de álbumes de un grupo en un año.
+
+Escribe una función llamada calcular_crecimiento_popularidad(df)
 
 La función debe:
 
-1. Ordenar los datos por cliente_id y fecha.
-2. Calcular el crecimiento porcentual de ventas entre registros consecutivos de cada cliente.
-3. Crear una nueva columna llamada crecimiento_pct.
+1. Ordenar los datos por group_name y year.
+2. Calcular el cambio porcentual de album_sales entre años consecutivos para cada grupo.
+3. Guardar el resultado en una nueva columna llamada growth_rate.
 4. Devolver el DataFrame con la nueva columna.
