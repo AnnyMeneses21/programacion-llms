@@ -1,6 +1,15 @@
-Write a Python function called dividir_datos(X, y, test_size).
+Problema: Evaluación de regresión con error absoluto
 
-Use sklearn train_test_split to split the dataset into training
-and testing sets.
+Escribe una función llamada evaluar_regresion_mae(X, y)
 
-Return X_train, X_test, y_train, y_test.
+La función debe:
+
+1. Dividir los datos en entrenamiento y prueba usando train_test_split con test_size=0.2 y random_state=42.
+2. Entrenar un modelo LinearRegression.
+3. Predecir sobre el conjunto de prueba.
+4. Calcular el Mean Absolute Error (MAE).
+
+La función debe devolver:
+
+mae
+y_pred
