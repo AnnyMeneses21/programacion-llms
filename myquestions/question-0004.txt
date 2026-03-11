@@ -1,15 +1,17 @@
-Problema: Evaluación de regresión con error absoluto
+Problema: Predicción de visualizaciones de videos de K-pop
 
-Escribe una función llamada evaluar_regresion_mae(X, y)
+Se tiene una matriz X con características numéricas de videos (duración, likes, comentarios, etc.) y un vector y con el número de visualizaciones.
+
+Escribe una función llamada predecir_visualizaciones_video(X, y)
 
 La función debe:
 
-1. Dividir los datos en entrenamiento y prueba usando train_test_split con test_size=0.2 y random_state=42.
+1. Dividir los datos usando train_test_split con test_size=0.2 y random_state=42.
 2. Entrenar un modelo LinearRegression.
 3. Predecir sobre el conjunto de prueba.
-4. Calcular el Mean Absolute Error (MAE).
+4. Calcular el Mean Squared Error (MSE).
 
 La función debe devolver:
 
-mae
-y_pred
+mse
+predictions
