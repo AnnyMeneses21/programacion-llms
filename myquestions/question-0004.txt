@@ -1,1 +1,6 @@
+Write a Python function called dividir_datos(X, y, test_size).
 
+Use sklearn train_test_split to split the dataset into training
+and testing sets.
+
+Return X_train, X_test, y_train, y_test.
