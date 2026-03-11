@@ -1,18 +1,18 @@
-Problema: Análisis de crecimiento de popularidad de grupos de K-pop
+Problema: Análisis de crecimiento de préstamos de libros en bibliotecas
 
 Se tiene un DataFrame con las columnas:
 
-group_name
+library_id
 year
-album_sales
+borrow_count
 
-Cada fila representa las ventas de álbumes de un grupo en un año.
+Cada fila representa el número de préstamos de libros de una biblioteca en un año.
 
-Escribe una función llamada calcular_crecimiento_popularidad(df)
+Escribe una función llamada calcular_crecimiento_prestamos(df)
 
 La función debe:
 
-1. Ordenar los datos por group_name y year.
-2. Calcular el cambio porcentual de album_sales entre años consecutivos para cada grupo.
+1. Ordenar los datos por library_id y year.
+2. Calcular el cambio porcentual de borrow_count entre años consecutivos para cada biblioteca.
 3. Guardar el resultado en una nueva columna llamada growth_rate.
 4. Devolver el DataFrame con la nueva columna.
