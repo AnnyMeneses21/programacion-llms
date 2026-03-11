@@ -1,1 +1,6 @@
-Temporary
+Write a Python function called calcular_media_por_grupo(df, group_col, value_col).
+
+The function must group the DataFrame by the column specified in group_col
+and compute the mean of the column value_col for each group.
+
+Return the result as a pandas Series.
