@@ -1,8 +1,8 @@
-Problema: Clasificación de popularidad de canciones de K-pop
+Problema: Clasificación de popularidad de libros
 
-Se tiene un DataFrame con características numéricas de canciones y una columna target llamada popularity_label.
+Se tiene un DataFrame con características numéricas de libros y una columna target llamada popularity_label.
 
-Escribe una función llamada entrenar_clasificador_popularidad(df, target_col)
+Escribe una función llamada entrenar_clasificador_libros(df, target_col)
 
 La función debe:
 
