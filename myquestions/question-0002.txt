@@ -1,14 +1,15 @@
-Problema: Identificación de días con ventas anormalmente altas
+Problema: Identificación de canciones virales de K-pop
 
-Se tiene un DataFrame con columnas:
+Se tiene un DataFrame con las columnas:
 
-fecha
-ventas
+song_name
+artist
+streams
 
-Escribe una función llamada detectar_picos_ventas(df, umbral_std)
+Escribe una función llamada detectar_canciones_virales(df, factor)
 
 La función debe:
 
-1. Calcular la media y desviación estándar de ventas.
-2. Identificar los días donde ventas > media + umbral_std * desviación.
-3. Devolver un DataFrame con solo esas filas.
+1. Calcular el promedio de streams.
+2. Identificar las canciones cuyo número de streams sea mayor que promedio * factor.
+3. Devolver un DataFrame con solo esas canciones.
