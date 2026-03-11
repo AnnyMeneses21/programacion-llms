@@ -4,13 +4,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
-def generar_caso_de_uso_predecir_visualizaciones_video():
+def generar_caso_de_uso_predecir_prestamos_libros():
 
     n_samples = random.randint(30,60)
     n_features = random.randint(2,5)
 
     X = np.random.rand(n_samples,n_features)
-    y = np.random.rand(n_samples) * 1000000
+    y = np.random.rand(n_samples) * 10000
 
     input_data = {
         "X": X.copy(),
