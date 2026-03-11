@@ -1,8 +1,8 @@
-Problema: Predicción de visualizaciones de videos de K-pop
+Problema: Predicción de número de préstamos de libros
 
-Se tiene una matriz X con características numéricas de videos (duración, likes, comentarios, etc.) y un vector y con el número de visualizaciones.
+Se tiene una matriz X con características numéricas de libros (número de páginas, año de publicación, calificación media, etc.) y un vector y con el número de préstamos.
 
-Escribe una función llamada predecir_visualizaciones_video(X, y)
+Escribe una función llamada predecir_prestamos_libros(X, y)
 
 La función debe:
 
