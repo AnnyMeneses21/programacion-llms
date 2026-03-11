@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 
-def generar_caso_de_uso_entrenar_clasificador_popularidad():
+def generar_caso_de_uso_entrenar_clasificador_libros():
 
     n_samples = random.randint(20,50)
     n_features = random.randint(3,6)
