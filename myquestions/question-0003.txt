@@ -1,1 +1,6 @@
+Write a Python function called entrenar_modelo_knn(X, y, k).
 
+The function must train a KNeighborsClassifier from sklearn
+using the provided features X and labels y.
+
+Return the trained model.
