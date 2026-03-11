@@ -1,6 +1,19 @@
-Write a Python function called calcular_media_por_grupo(df, group_col, value_col).
+Problema: Detección de facturación inconsistente
 
-The function must group the DataFrame by the column specified in group_col
-and compute the mean of the column value_col for each group.
+Una empresa tiene registros de facturación mensual de sus clientes.
+Se dispone de un DataFrame con las siguientes columnas:
 
-Return the result as a pandas Series.
+cliente_id
+mes
+facturacion
+
+Escribe una función llamada detectar_incrementos_anormales(df, umbral)
+
+La función debe:
+
+1. Ordenar los registros por cliente_id y mes.
+2. Calcular el cambio porcentual de facturación entre meses consecutivos por cliente.
+3. Identificar los casos donde el incremento sea mayor que el valor de umbral.
+4. Devolver un DataFrame con las filas donde el incremento sea mayor al umbral.
+
+El DataFrame retornado debe incluir una columna adicional llamada incremento_pct.
