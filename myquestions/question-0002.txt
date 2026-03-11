@@ -1,1 +1,6 @@
+Write a Python function called normalizar_dataframe(df).
 
+The function must normalize all numeric columns in the DataFrame
+between 0 and 1 using min-max normalization.
+
+Return the normalized DataFrame.
