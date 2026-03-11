@@ -1,6 +1,16 @@
-Write a Python function called entrenar_modelo_knn(X, y, k).
+Problema: Entrenamiento de modelo KNN
 
-The function must train a KNeighborsClassifier from sklearn
-using the provided features X and labels y.
+Escribe una función llamada entrenar_knn(X, y, k)
 
-Return the trained model.
+La función debe:
+
+1. Escalar X usando StandardScaler.
+2. Entrenar un modelo KNeighborsClassifier con n_neighbors=k.
+3. Predecir las etiquetas sobre los mismos datos.
+4. Calcular el accuracy usando accuracy_score.
+
+La función debe devolver:
+
+modelo_entrenado
+accuracy
+predicciones
